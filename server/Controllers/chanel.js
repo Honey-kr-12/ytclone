@@ -34,3 +34,23 @@ export const getAllChanels = async(req,res) => {
         res.status(404).json({message: error.message})
     }
 }
+
+export const updatePremium = async() => {
+    const {id: _id} = req.params;
+    console.log(id);
+
+    if (!mongoose.Types.ObjectId.isValid(_id)) {
+        return res.status(400).send("Iser unavailable")
+    }
+    try {
+        const updateData = await User.findByIdAndUpdate(_id,{
+            $set:{
+                'isPremium':true
+            }
+        },{new:true})
+        console.log(updateData);
+        res.status(200).json({updateData})
+    } catch (error) {
+        res.status(405).json({message:error})
+    }
+}
