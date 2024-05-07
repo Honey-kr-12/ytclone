@@ -1,0 +1,123 @@
+.Chanel_logo_App{
+  width: 2.2rem;  
+  height: 2.2rem;
+  margin: auto;
+  border-radius: 100%;
+  background-color: rgb(224,227,214);
+  display: flex;
+}
+.fstChar_logo_App{
+  margin: auto;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container_Pages_App{
+  display: flex;
+  background-color: rgb(19, 19, 19);
+}
+
+.container2_Pages_App{
+  width: calc(100vw - 5rem);
+  height: calc(100vh - 3.65rem);
+  /* border-top: 2px solid rgb(128,128,128,0.45); */
+  overflow-y: auto;
+}
+.video_box_app{
+  width: 21rem;
+  height: 17rem;
+  margin-bottom: 1rem;
+  /* border: 2px solid transparent; */
+  border: 2px solid rgb(25,24,24);
+  /* background-color: rgb(25, 24, 24); */
+}
+video {
+  background-color: rgba(8,8,8,0.662);
+  border: 2px solid orange;
+}
+.dot{
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background-color: white;
+  margin: auto 0.5rem;
+}
+  .weather{
+  display: flex;
+  background-color: rgb(19,19,19);
+  }
+  
+  .clear-sky-day{
+    background: linear-gradient(6deg, rgba(61,157,225,1) 0%, rgba(9,9,121,1) 100%);
+    color: #000; 
+    
+  }
+  
+  .clear-sky-night{
+    background: linear-gradient(6deg, rgba(12,42,62,1) 0%, rgb(8, 8, 113) 100%);
+    color: #ffffff;
+  }
+  
+  .cloud-day{
+    background-color: #B0C4DE; 
+    color: #000; 
+  }
+  
+  .cloud-night{
+    background-color: #2b3856;
+    color: #ffffff;
+  }
+  
+  .rain-day, .rain-night{
+    background-color: rgb(28, 68, 211);
+      position: absolute;
+      width: 2px; 
+      height: 10px; 
+      background-color: #ffffff;
+      animation: rain 1s linear infinite;
+  }
+  
+  @keyframes rain {
+      0% {
+          transform: translateY(-10px) rotate(45deg); 
+      }
+      100% {
+          transform: translateY(100vh) rotate(45deg); 
+      }
+  }
+  .rain-night{
+    background-color: rgb(3, 14, 50);
+  }
+  
+  .snow-day .snow-night{
+    background-color: #ffffff; /* Snowflake color */
+      position: absolute;
+      top: -10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      animation: snowfall 10s linear infinite;
+  }
+  
+  /* Snowflake animations */
+  @keyframes snowfall {
+      0% {
+          transform: translateY(-100%);
+      }
+      100% {
+          transform: translateY(100vh);
+      }
+  }
+  
+  .snow-night{
+  background-color: #ffffffad;
+  }
+  
+  .mist-day{
+  background-color: #ffffffad;
+  }
+  
+  .mist-night{
+  background-color: #ffffffad;
+  }
