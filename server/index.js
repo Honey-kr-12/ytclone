@@ -7,8 +7,6 @@ import bodyParser from "body-parser"
 import videoRoutes from './routes/video.js'
 import commentsRoutes from './routes/comments.js'
 import stripePackage from  'stripe'
-const stripe = stripePackage('sk_test_51OxQe8SCUzgxBymGJKcN3sPlQzbHjnxl66O0Zv9ULlkMQwWA1KbjHR86tGGTN2FwuxIJB09gtNclSdBjdtot28bh001Ujmv9tV')
-
 import paymentRoutes from './Routes/payment.js'
 import path from 'path'
 import requestIp from 'request-ip'
