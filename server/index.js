@@ -20,9 +20,9 @@ dontenv.config();
 
 const app=express()
 app.use(cors());
-// app.use(express.json({limit:"30mb", extended:true}));
-// app.use(express.urlencoded({limit:"30mb", extended:true}));
-// app.use('/uploads',express.static(path.join('uploads')))
+app.use(express.json({limit:"30mb", extended:true}));
+app.use(express.urlencoded({limit:"30mb", extended:true}));
+app.use('/uploads',express.static(path.join('uploads')))
 
 
 app.get('/',(req,res) => {
@@ -31,10 +31,10 @@ app.get('/',(req,res) => {
 
 app.use(bodyParser.json());
 app.set('trust proxy', true);
-// app.use(requestIp.mw());
-// app.use('/user',userRoutes);
-// app.use('/video',videoRoutes);
-// app.use('/comment',commentsRoutes);
+app.use(requestIp.mw());
+app.use('/user',userRoutes);
+app.use('/video',videoRoutes);
+app.use('/comment',commentsRoutes);
 // app.use('/premium/api/subscriptions',paymentRoutes);
 // app.use('/api/create-subscription-checkout-session',async);
 
