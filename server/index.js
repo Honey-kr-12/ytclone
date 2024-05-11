@@ -1,15 +1,15 @@
 import express from "express"
 import dontenv from "dotenv"
 import connectionToDatabase from "./db/connectionToDatabase.js"
-// import userRoutes from './Routes/user.js'
+import userRoutes from './Routes/user.js'
 import cors from 'cors'
 import bodyParser from "body-parser"
-// import videoRoutes from './routes/video.js'
-// import commentsRoutes from './routes/comments.js'
+import videoRoutes from './routes/video.js'
+import commentsRoutes from './routes/comments.js'
 // import stripePackage from  'stripe'
 // import paymentRoutes from './Routes/payment.js'
-// import path from 'path'
-// import requestIp from 'request-ip'
+import path from 'path'
+import requestIp from 'request-ip'
 
 // const quantity = 25;
 
