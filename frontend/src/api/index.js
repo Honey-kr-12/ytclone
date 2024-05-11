@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API = axios.create({baseURL: `http://localhost:5000/` })
+const API = axios.create({baseURL: `https://ytserver-inky.vercel.app/` })
 console.log("api",API);
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("Profile")) {
